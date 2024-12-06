@@ -18,7 +18,17 @@ Minimum of just one game controller and one portable processor to play the game 
 
 ### 2. Images
 
-[Insert final project images here]
+#### Game controller 1 (Input device/Pitcher)
+
+![alt text](images/Pitcher_case.jpg)
+
+#### Game controller 2 (Input device/Hit Bat)
+
+![alt text](images/HitBat_case.jpg)
+
+#### Portable Central Processor
+
+![alt text](images/Processor.jpg)
 
 ### 3. Results
 
