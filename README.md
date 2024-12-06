@@ -32,7 +32,7 @@ Minimum of just one game controller and one portable processor to play the game 
 
 ### 3. Results
 
-What were your results? Namely, what was the final solution/design to your problem?
+We finally have three devices, Pitcher, Hit Bat, and Score board. Each device have a Atmaga328Pb, ESP32, level shifter, and buck converter. Pitcher and Hit bat have an IMU to detect the motion of the device, which will be used to calculate the winner of the game. Score board have a LCD screen, buzzer, and two light bulbs. The Score board will receive data from Pitcher and Hit bat to determine who win the game, and display the corresponding anime on LCD and light it bulb. The buzzer is a notification that if the Pitcher failed to throw the ball and asked for retry. The game will end if a player get 5 score.
 
 ### 4 Software Requirements Specification (SRS) Validation
 
