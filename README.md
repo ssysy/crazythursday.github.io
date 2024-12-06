@@ -69,12 +69,13 @@ We finally have three devices, Pitcher, Hit Bat, and Score board. Each device ha
 What did you learn from it? 
 What went well? 
 What accomplishments are you proud of? 
+What did you learn/gain from this experience?
 
-What did you learn/gain from this experience? 
-Did you have to change your approach? 
-What could have been done differently? 
-
-Did you encounter obstacles that you didn’t anticipate? 
+### Encountered Issues
+- High Complexity of calculating velocity and angle (Kalman filtering and quaternions can be used to improve detection accuracy)
+- Short Battery life (Final demo: Playable for only 10-15 mins per battery cycle)
+- Conflicts caused by multiplexing of communication protocol pin (UART1 and SPI0, we therefore change to SPI1)
+- Game logics can be complicated and cause some bugs.
 
 ### Next steps
 
