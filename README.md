@@ -32,9 +32,11 @@ Minimum of just one game controller and one portable processor to play the game 
 
 ### 3. Results
 
-We finally have three devices in our project, Pitcher, Hit Bat, and Score board. Each device have a Atmaga328Pb, ESP32, level shifter, and buck converter. Pitcher and Hit bat have an IMU to detect the motion of the device, which will be used to calculate the winner of the game. Score board have a LCD screen, buzzer, and two light bulbs. The Score board will receive data from Pitcher and Hit bat to determine who win the game, and display the corresponding anime on LCD and light it bulb. The buzzer is a notification that if the Pitcher failed to throw the ball and asked for retry. The game will end if a player get 5 score.
+- General Purpose Devices: 2 motion-sensing game controller and 1 central processor, all devices are portable and no WiFi requirement.
 
-### 4 Software Requirements Specification (SRS) Validation
+- Available Game: A baseball simulation game, which requires 2 game controller (one as pitcher and another as hit bat) and 1 processor (perform as scoreboard), allowing 2 players to enjoy. The game can be played at low latency in both indoor and outdoor environments with a player distance within 10m.
+  
+### 4. Software Requirements Specification (SRS) Validation
 
 - SRS 01 – Two microcontroller needs to be able to communicate with each other without external WiFi connection. Communication delay should be less than 10ms. In our project, ESP32 device communicates directly with another ESP32 by specifying its MAC address.
 
@@ -46,7 +48,7 @@ We finally have three devices in our project, Pitcher, Hit Bat, and Score board.
 
 - SRS 05 - The timing and predicted trajectory are used to determine which player win the points, also the gaming logic will be programmed within one project.
 
-### 5 Hardware Requirements Specification (HRS) Validation
+### 5. Hardware Requirements Specification (HRS) Validation
 
 - HRS 01 – Microcontroller with enough communication ports to establish at least three communicaiton channels. This project is based on ATmega328PB microcontroller coded with baremetal C.
 
@@ -62,7 +64,7 @@ We finally have three devices in our project, Pitcher, Hit Bat, and Score board.
 
 - HRS 07 - Actuators: LED, Buzzer, etc. could be added to any socre board devices as player interfaces. This project used two LEDs and one buzzer on socre board.
 
-### 4. Conclusion
+### 6. Conclusion
 
 ### What we learned
 
