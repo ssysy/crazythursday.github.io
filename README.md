@@ -1,4 +1,4 @@
-# crazythursday.github.io
+# Developed by Crazy Thursday
 
 - Team Name: Crazy Thursday
 - Team Members: Zheyu Li, Shun Yao, Zhuozi Xie
