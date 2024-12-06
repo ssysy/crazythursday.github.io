@@ -64,17 +64,18 @@ We finally have three devices, Pitcher, Hit Bat, and Score board. Each device ha
 
 ### 4. Conclusion
 
-### Current Outcomes
+### What we learned
 
-What did you learn from it? 
-What went well? 
-What accomplishments are you proud of? 
-What did you learn/gain from this experience?
+- Based on chip's datasheet to write bare metal C
+- Application of Timer, interrupt, GPIO on AVR (ATmega328PB)
+- Learn how to write drivers for I2C, UART, SPI on AVR chips
+- ESP-NOW configuration on ESP32 using Arduino
 
 ### Encountered Issues
 - High Complexity of calculating velocity and angle (Kalman filtering and quaternions can be used to improve detection accuracy)
 - Short Battery life (Final demo: Playable for only 10-15 mins per battery cycle)
 - Conflicts caused by multiplexing of communication protocol pin (UART1 and SPI0, we therefore change to SPI1)
+- Integration of different parts could be difficult (3 devices, 4 different kind of communication protocols)
 - Game logics can be complicated and cause some bugs.
 
 ### Next steps
