@@ -14,7 +14,9 @@ If you’ve never made a Github pages website before, you can follow this webpag
 
 ### 1. Video
 
-[Insert final project video here]
+<video src="Final demo.mov" controls width="640" height="360">
+Final Demo
+</video>
 
 ### 2. Images
 
@@ -28,9 +30,32 @@ What were your results? Namely, what was the final solution/design to your probl
 
 Based on your quantified system performance, comment on how you achieved or fell short of your expected software requirements. You should be quantifying this, using measurement tools to collect data.
 
+SRS 01 – In a single peer-to-peer setup, ESP device communicates directly with another ESP device by specifying its MAC address.
+
+SRS 02 – Devices use MAC addresses to identify specific peers, allowing a single device to send data to multiple others, either as broadcast or to specific groups.
+
+SRS 03 - Upon the signal send to computer, the system will generate the appropriate animation: bat swing, followed by the ball landing or catched animation.
+
+Due to the limitaion of LCD, instead of ball landing or cathed animation we developed a show each stage with words on the screen with a ball flying animation.
+
+SRS 04 - With the xyz acceleration and spatial angle acquired by the sensor, the trajectory and landing position of the baseball are calculated, and the result is judged by comparing the swing time and catch time.
+
 #### 3.2 Hardware Requirements Specification (HRS) Results
 
 Based on your quantified system performance, comment on how you achieved or fell short of your expected hardware requirements. You should be quantifying this, using measurement tools to collect data.
+
+HRS 01 – Project shall be based on ATmega microcontroller using baremetal C
+
+HRS 02 - Project wireless communication parts will be handelled by ESP
+
+HRS 06 - One button switch shall be used at the Pitcher Glove to detect whether the 'ball' has been thrown out or not.
+Modification & Improvement:
+
+HRS 03 – A 6-DOF Orientation IMU shall be used for movement detection. The sensor shall detect the acceleration and angular velocity at the Pitcher Glove and the Hit Bat.
+
+HRS 04 – An LCD used for user interface. The display shall communicate with the microcontroller via UART bus.
+
+HRS 05 - A 5V and 3.3V power supply to power up the ESP and ATmega.
 
 ### 4. Conclusion
 
