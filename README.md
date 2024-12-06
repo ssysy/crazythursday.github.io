@@ -26,33 +26,31 @@ What were your results? Namely, what was the final solution/design to your probl
 
 ### 4 Software Requirements Specification (SRS) Results
 
-Based on your quantified system performance, comment on how you achieved or fell short of your expected software requirements. You should be quantifying this, using measurement tools to collect data.
+- SRS 01 – Two microcontroller needs to be able to communicate with each other without external WiFi connection. Communication delay should be less than 10ms. In our project, ESP32 device communicates directly with another ESP32 by specifying its MAC address.
 
-SRS 01 – In a single peer-to-peer setup, ESP device communicates directly with another ESP device by specifying its MAC address.
+- SRS 02 – Mutiple MCU devices required to be able to identify others, allowing one Master device able to communicate with mutiple slave diveces. This project use ESP32 MAC addresses to identify specific peers, allowing a single device to receive data from multiple others.
 
-SRS 02 – Devices use MAC addresses to identify specific peers, allowing a single device to send data to multiple others, either as broadcast or to specific groups.
+- SRS 03 - The Master MCU device needs to be able to generate a appropriate animation or score board on an LCD or equivlent display based on the signal send from slave devices.
 
-SRS 03 - Upon the signal send to computer, the system will generate the appropriate animation: bat swing, followed by the ball landing or catched animation.
+- SRS 04 - With the acceleration on X and Y axis of IMU, one calculation algorithm that can calculate the trajectory and timing slot between the Pither and HitBall needs to be programmed.
 
-Due to the limitaion of LCD, instead of ball landing or cathed animation we developed a show each stage with words on the screen with a ball flying animation.
-
-SRS 04 - With the xyz acceleration and spatial angle acquired by the sensor, the trajectory and landing position of the baseball are calculated, and the result is judged by comparing the swing time and catch time.
+- SRS 05 - The timing and predicted trajectory are used to determine which player win the points, also the gaming logic will be programmed within one project.
 
 ### 5 Hardware Requirements Specification (HRS) Results
 
-HRS 01 – Microcontroller with enough communication ports to establish at least three communicaiton channels. This project is based on ATmega328PB microcontroller coded with baremetal C.
+- HRS 01 – Microcontroller with enough communication ports to establish at least three communicaiton channels. This project is based on ATmega328PB microcontroller coded with baremetal C.
 
-HRS 02 - Microcontroller with WiFi communication ability or equivlent. Here wireless communication parts will be handelled by ESP32 S2 Feather through ESP-NOW protocol.
+- HRS 02 - Microcontroller with WiFi communication ability or equivlent. Here wireless communication parts will be handelled by ESP32 S2 Feather through ESP-NOW protocol.
 
-HRS 06 - One push button (momentary switch) shall be used at the Pitcher Glove to detect whether the 'ball' has been thrown out or not.
+- HRS 03 – A 6-DOF orientation IMU shall be used for movement detection. The sensor shall measure acceleration and angular velocity on the Pitcher Glove and the Hit Bat, with a detection range of at least -4g to 4g and a resolution of 2^16 steps.
 
-Modification & Improvement:
+- HRS 04 – An LCD used for user interface. The display shall be able to communicate with the microcontroller via UART, I2C or equivalent communication protocol.
 
-HRS 03 – A 6-DOF orientation IMU shall be used for movement detection. The sensor shall measure acceleration and angular velocity on the Pitcher Glove and the Hit Bat, with a detection range of at least -4g to 4g and a resolution of $2^{16}$ steps.
+- HRS 05 - A power supply that can provide rated power for the used mircocontrollers, in this case: 3.3V for ESP32 S2 Feather and 5V for ATmega328PB.
 
-HRS 04 – An LCD used for user interface. The display shall be able to communicate with the microcontroller via UART, I2C or equivalent communication protocol.
+- HRS 06 - One push button (momentary switch) shall be used at the Pitcher Glove to detect whether the 'ball' has been thrown out or not.
 
-HRS 05 - A power supply that can provide rated power for the used mircocontrollers, in this case: 3.3V for ESP32 S2 Feather and 5V for ATmega328PB.
+- HRS 07 - Actuators: LED, Buzzer, etc. could be added to any socre board devices as player interfaces. This project used two LEDs and one buzzer on socre board.
 
 ### 4. Conclusion
 
