@@ -24,7 +24,7 @@ Minimum of just one game controller and one portable processor to play the game 
 
 What were your results? Namely, what was the final solution/design to your problem?
 
-### 4 Software Requirements Specification (SRS) Results
+### 4 Software Requirements Specification (SRS) Validation
 
 Based on your quantified system performance, comment on how you achieved or fell short of your expected software requirements. You should be quantifying this, using measurement tools to collect data.
 
@@ -38,7 +38,7 @@ Due to the limitaion of LCD, instead of ball landing or cathed animation we deve
 
 SRS 04 - With the xyz acceleration and spatial angle acquired by the sensor, the trajectory and landing position of the baseball are calculated, and the result is judged by comparing the swing time and catch time.
 
-### 5 Hardware Requirements Specification (HRS) Results
+### 5 Hardware Requirements Specification (HRS) Validation
 
 HRS 01 – Microcontroller with enough communication ports to establish at least three communicaiton channels. This project is based on ATmega328PB microcontroller coded with baremetal C.
 
