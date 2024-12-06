@@ -1,4 +1,4 @@
-# crazythursday.github.io
+# Developed by Crazy Thursday
 
 - Team Name: Crazy Thursday
 - Team Members: Zheyu Li, Shun Yao, Zhuozi Xie
@@ -18,13 +18,23 @@ Minimum of just one game controller and one portable processor to play the game 
 
 ### 2. Images
 
-[Insert final project images here]
+#### Game controller 1 (Input device/Pitcher)
+
+![alt text](images/Pitcher_case.jpg)
+
+#### Game controller 2 (Input device/Hit Bat)
+
+![alt text](images/HitBat_case.jpg)
+
+#### Portable Central Processor
+
+![alt text](images/Processor.jpg)
 
 ### 3. Results
 
-What were your results? Namely, what was the final solution/design to your problem?
+We finally have three devices, Pitcher, Hit Bat, and Score board. Each device have a Atmaga328Pb, ESP32, level shifter, and buck converter. Pitcher and Hit bat have an IMU to detect the motion of the device, which will be used to calculate the winner of the game. Score board have a LCD screen, buzzer, and two light bulbs. The Score board will receive data from Pitcher and Hit bat to determine who win the game, and display the corresponding anime on LCD and light it bulb. The buzzer is a notification that if the Pitcher failed to throw the ball and asked for retry. The game will end if a player get 5 score.
 
-### 4 Software Requirements Specification (SRS) Results
+### 4 Software Requirements Specification (SRS) Validation
 
 - SRS 01 – Two microcontroller needs to be able to communicate with each other without external WiFi connection. Communication delay should be less than 10ms. In our project, ESP32 device communicates directly with another ESP32 by specifying its MAC address.
 
@@ -36,7 +46,7 @@ What were your results? Namely, what was the final solution/design to your probl
 
 - SRS 05 - The timing and predicted trajectory are used to determine which player win the points, also the gaming logic will be programmed within one project.
 
-### 5 Hardware Requirements Specification (HRS) Results
+### 5 Hardware Requirements Specification (HRS) Validation
 
 - HRS 01 – Microcontroller with enough communication ports to establish at least three communicaiton channels. This project is based on ATmega328PB microcontroller coded with baremetal C.
 
@@ -54,4 +64,21 @@ What were your results? Namely, what was the final solution/design to your probl
 
 ### 4. Conclusion
 
-Reflect on your project. Some questions to consider: What did you learn from it? What went well? What accomplishments are you proud of? What did you learn/gain from this experience? Did you have to change your approach? What could have been done differently? Did you encounter obstacles that you didn’t anticipate? What could be a next step for this project?
+### Current Outcomes
+
+What did you learn from it? 
+What went well? 
+What accomplishments are you proud of? 
+
+What did you learn/gain from this experience? 
+Did you have to change your approach? 
+What could have been done differently? 
+
+Did you encounter obstacles that you didn’t anticipate? 
+
+### Next steps
+
+- More Reliable, Longer Lasting, Rechargeable Power Supply Solutions
+- Better visualization (Larger LCD etc.)
+- More Robust Hardware Connection (PCB, More fitted cases)
+- More Available Games 
