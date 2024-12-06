@@ -14,9 +14,7 @@ If you’ve never made a Github pages website before, you can follow this webpag
 
 ### 1. Video
 
-<video src="Final demo.mov" controls width="640" height="360">
-Final Demo
-</video>
+[Youtube Demo Video](https://www.youtube.com/watch?v=_IhdffkUVsc)
 
 ### 2. Images
 
