@@ -1,9 +1,10 @@
 # crazythursday.github.io
-    * Team Name: Crazy Thursday
-    * Team Members: Zheyu Li, Shun Yao, Zhuozi Xie 
-    * Github Repository URL: https://github.com/upenn-embedded/final-project-crazy-thursday.git
-    * Github Pages Website URL: https://github.com/ssysy/crazythursday.github.io
-    * Description of hardware: ATmega328PB, ESP32 S2 Feather, 6-DOF IMU, LCD, LED, Buzzer
+
+- Team Name: Crazy Thursday
+- Team Members: Zheyu Li, Shun Yao, Zhuozi Xie
+- Github Repository URL: https://github.com/upenn-embedded/final-project-crazy-thursday.git
+- Github Pages Website URL: https://github.com/ssysy/crazythursday.github.io
+- Description of hardware: ATmega328PB, ESP32 S2 Feather, 6-DOF IMU, LCD, LED, Buzzer
 
 ## Final Project Report
 
@@ -38,20 +39,19 @@ SRS 04 - With the xyz acceleration and spatial angle acquired by the sensor, the
 
 #### 3.2 Hardware Requirements Specification (HRS) Results
 
-Based on your quantified system performance, comment on how you achieved or fell short of your expected hardware requirements. You should be quantifying this, using measurement tools to collect data.
+HRS 01 – Microcontroller with enough communication ports to establish at least three communicaiton channels. This project is based on ATmega328PB microcontroller coded with baremetal C.
 
-HRS 01 – Project shall be based on ATmega microcontroller using baremetal C
+HRS 02 - Microcontroller with WiFi communication ability or equivlent. Here wireless communication parts will be handelled by ESP32 S2 Feather through ESP-NOW protocol.
 
-HRS 02 - Project wireless communication parts will be handelled by ESP
+HRS 06 - One push button (momentary switch) shall be used at the Pitcher Glove to detect whether the 'ball' has been thrown out or not.
 
-HRS 06 - One button switch shall be used at the Pitcher Glove to detect whether the 'ball' has been thrown out or not.
 Modification & Improvement:
 
-HRS 03 – A 6-DOF Orientation IMU shall be used for movement detection. The sensor shall detect the acceleration and angular velocity at the Pitcher Glove and the Hit Bat.
+HRS 03 – A 6-DOF orientation IMU shall be used for movement detection. The sensor shall measure acceleration and angular velocity on the Pitcher Glove and the Hit Bat, with a detection range of at least -4g to 4g and a resolution of $2^{16}$ steps.
 
-HRS 04 – An LCD used for user interface. The display shall communicate with the microcontroller via UART bus.
+HRS 04 – An LCD used for user interface. The display shall be able to communicate with the microcontroller via UART, I2C or equivalent communication protocol.
 
-HRS 05 - A 5V and 3.3V power supply to power up the ESP and ATmega.
+HRS 05 - A power supply that can provide rated power for the used mircocontrollers, in this case: 3.3V for ESP32 S2 Feather and 5V for ATmega328PB.
 
 ### 4. Conclusion
 
