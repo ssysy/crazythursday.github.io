@@ -3,7 +3,7 @@
 - Team Name: Crazy Thursday
 - Team Members: Zheyu Li, Shun Yao, Zhuozi Xie
 - Github Repository URL: [https://github.com/upenn-embedded/final-project-crazy-thursday.git](https://github.com/upenn-embedded/final-project-crazy-thursday.git)
-- Github Pages Website URL: [https://github.com/ssysy/crazythursday.github.io](https://github.com/ssysy/crazythursday.github.io)
+- Github Pages Website URL: [https://ssysy.github.io/crazythursday.github.io/](https://ssysy.github.io/crazythursday.github.io/)
 - Description of hardware: ATmega328PB, ESP32 S2 Feather, 6-DOF IMU, LCD, LED, Buzzer
 
 ## Introduction
