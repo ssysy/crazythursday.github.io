@@ -66,4 +66,21 @@ HRS 05 - A power supply that can provide rated power for the used mircocontrolle
 
 ### 4. Conclusion
 
-Reflect on your project. Some questions to consider: What did you learn from it? What went well? What accomplishments are you proud of? What did you learn/gain from this experience? Did you have to change your approach? What could have been done differently? Did you encounter obstacles that you didn’t anticipate? What could be a next step for this project?
+### Current Outcomes
+
+What did you learn from it? 
+What went well? 
+What accomplishments are you proud of? 
+
+What did you learn/gain from this experience? 
+Did you have to change your approach? 
+What could have been done differently? 
+
+Did you encounter obstacles that you didn’t anticipate? 
+
+### Next steps
+
+- More Reliable, Longer Lasting, Rechargeable Power Supply Solutions
+- Better visualization (Larger LCD etc.)
+- More Robust Hardware Connection (PCB, More fitted cases)
+- More Available Games 
