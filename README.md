@@ -2,8 +2,8 @@
 
 - Team Name: Crazy Thursday
 - Team Members: Zheyu Li, Shun Yao, Zhuozi Xie
-- Github Repository URL: https://github.com/upenn-embedded/final-project-crazy-thursday.git
-- Github Pages Website URL: https://github.com/ssysy/crazythursday.github.io
+- Github Repository URL: [https://github.com/upenn-embedded/final-project-crazy-thursday.git](https://github.com/upenn-embedded/final-project-crazy-thursday.git)
+- Github Pages Website URL: [https://github.com/ssysy/crazythursday.github.io](https://github.com/ssysy/crazythursday.github.io)
 - Description of hardware: ATmega328PB, ESP32 S2 Feather, 6-DOF IMU, LCD, LED, Buzzer
 
 ## Introduction
@@ -14,7 +14,7 @@ Minimum of just one game controller and one portable processor to play the game 
 
 ### 1. Video
 
-[Youtube Demo Video](https://www.youtube.com/watch?v=_IhdffkUVsc)
+[Click Here for Our Youtube Demo Video!](https://www.youtube.com/watch?v=_IhdffkUVsc)
 
 ### 2. Images
 
@@ -32,7 +32,7 @@ Minimum of just one game controller and one portable processor to play the game 
 
 ### 3. Results
 
-We finally have three devices, Pitcher, Hit Bat, and Score board. Each device have a Atmaga328Pb, ESP32, level shifter, and buck converter. Pitcher and Hit bat have an IMU to detect the motion of the device, which will be used to calculate the winner of the game. Score board have a LCD screen, buzzer, and two light bulbs. The Score board will receive data from Pitcher and Hit bat to determine who win the game, and display the corresponding anime on LCD and light it bulb. The buzzer is a notification that if the Pitcher failed to throw the ball and asked for retry. The game will end if a player get 5 score.
+We finally have three devices in our project, Pitcher, Hit Bat, and Score board. Each device have a Atmaga328Pb, ESP32, level shifter, and buck converter. Pitcher and Hit bat have an IMU to detect the motion of the device, which will be used to calculate the winner of the game. Score board have a LCD screen, buzzer, and two light bulbs. The Score board will receive data from Pitcher and Hit bat to determine who win the game, and display the corresponding anime on LCD and light it bulb. The buzzer is a notification that if the Pitcher failed to throw the ball and asked for retry. The game will end if a player get 5 score.
 
 ### 4 Software Requirements Specification (SRS) Validation
 
@@ -56,7 +56,7 @@ We finally have three devices, Pitcher, Hit Bat, and Score board. Each device ha
 
 - HRS 04 – An LCD used for user interface. The display shall be able to communicate with the microcontroller via UART, I2C or equivalent communication protocol.
 
-- HRS 05 - A power supply that can provide rated power for the used mircocontrollers, in this case: 3.3V for ESP32 S2 Feather and 5V for ATmega328PB.
+- HRS 05 - A power supply that can provide rated power for the used mircocontrollers, in this case: 3.3V for ESP32 S2 Feather and 5V for ATmega328PB. (Since we are using ATmega and ESP32 that have different logic voltage levels, an additionaly level shifter is need for communication between the two)
 
 - HRS 06 - One push button (momentary switch) shall be used at the Pitcher Glove to detect whether the 'ball' has been thrown out or not.
 
