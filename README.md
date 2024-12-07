@@ -16,7 +16,7 @@ Minimum of just one game controller and one portable processor to play the game 
 
 [Click Here for Our Final Demo Video!](https://youtu.be/q_Dpyx5knPU)
 
-Here are two videos for our [Indoor Stability Test](https://youtu.be/DEhBPQdpUdI) and [Outdoor Stability Test](https://youtu.be/DEhBPQdpUdI).
+Here are two videos for our [Indoor Stability Test](https://youtu.be/DEhBPQdpUdI) and [Outdoor Stability Test](https://youtube.com/shorts/iqyVfCPdVwQ?feature=share).
 
 ### 2. Images
 
