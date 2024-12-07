@@ -14,19 +14,21 @@ Minimum of just one game controller and one portable processor to play the game 
 
 ### 1. Video
 
-[Click Here for Our Youtube Demo Video!](https://www.youtube.com/watch?v=_IhdffkUVsc)
+[Click Here for Our Final Demo Video!](https://www.youtube.com/watch?v=_IhdffkUVsc)
+
+Here are two videos for our [Indoor Stability Test](https://www.youtube.com/watch?v=_IhdffkUVsc) and [Outdoor Stability Test](https://www.youtube.com/watch?v=_IhdffkUVsc).
 
 ### 2. Images
 
-#### Game controller 1 (Input Device/Pitcher)
+#### Game Controller 1 (Input Device/Pitcher)
 
 ![alt text](images/Pitcher_case.jpg)
 
-#### Game controller 2 (Input Device/Hit Bat)
+#### Game Controller 2 (Input Device/Hit Bat)
 
 ![alt text](images/HitBat_case.jpg)
 
-#### Portable Central Processor
+#### Portable Central Processor (Output Device/Score Board)
 
 ![alt text](images/Processor.jpg)
 
