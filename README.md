@@ -86,7 +86,7 @@ Minimum of just one game controller and one portable processor to play the game 
 
 - HRS 05 - A power supply that can provide rated power for the used mircocontrollers, in this case: 3.3V for ESP32 S2 Feather and 5V for ATmega328PB. (Since we are using ATmega and ESP32 that have different logic voltage levels, an additionaly level shifter is need for communication between the two)
 
-[Please See File:"datasheet" for Proof](https://github.com/ssysy/crazythursday.github.io/tree/main)
+  [Please See File:"datasheet" for Proof](https://github.com/ssysy/crazythursday.github.io/tree/main)
 
 - HRS 06 - One push button (momentary switch) shall be used at the Pitcher Glove to detect whether the 'ball' has been thrown out or not.
 
