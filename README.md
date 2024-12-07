@@ -38,31 +38,43 @@ Minimum of just one game controller and one portable processor to play the game 
   
 ### 4. Software Requirements Specification (SRS) Validation
 
-- SRS 01 – Two microcontroller needs to be able to communicate with each other without external WiFi connection. Communication delay should be less than 10ms. In our project, ESP32 device communicates directly with another ESP32 by specifying its MAC address.
+- SRS 01 – Two microcontroller needs to be able to communicate with each other without external WiFi connection. Communication delay should be less than 10ms. In our project, ESP32 device communicates directly with another ESP32 by specifying its MAC address. [Proof of Work Video](https://youtube.com/shorts/MFv3rUwa7cc)
 
-- SRS 02 – Mutiple MCU devices required to be able to identify others, allowing one Master device able to communicate with mutiple slave diveces. This project use ESP32 MAC addresses to identify specific peers, allowing a single device to receive data from multiple others.
+- SRS 02 – Mutiple MCU devices required to be able to identify others, allowing one Master device able to communicate with mutiple slave diveces. This project use ESP32 MAC addresses to identify specific peers, allowing a single device to receive data from multiple others. [Proof of Work Video](https://youtube.com/shorts/MFv3rUwa7cc)
 
-- SRS 03 - The Master MCU device needs to be able to generate a appropriate animation or score board on an LCD or equivlent display based on the signal send from slave devices.
+- SRS 03 - The Master MCU device needs to be able to generate a appropriate animation or score board on an LCD or equivlent display based on the signal send from slave devices. [Proof of Work Video](https://youtu.be/N9RdOPIz6gk)
 
 - SRS 04 - With the acceleration on X and Y axis of IMU, one calculation algorithm that can calculate the trajectory and timing slot between the Pither and HitBall needs to be programmed.
 
-- SRS 05 - The timing and predicted trajectory are used to determine which player win the points, also the gaming logic will be programmed within one project.
+<div style="text-align: center;">
+
+  <img src="images/SRS4.png" alt="Description" style="width:60%; height:auto;" />
+
+</div>
+
+- SRS 05 - The timing and predicted trajectory are used to determine which player win points, also the gaming logic will be programmed within one project. [Proof of Work Video](https://youtu.be/N9RdOPIz6gk)
 
 ### 5. Hardware Requirements Specification (HRS) Validation
 
-- HRS 01 – Microcontroller with enough communication ports to establish at least three communicaiton channels. This project is based on ATmega328PB microcontroller coded with baremetal C.
+- HRS 01 – Microcontroller with enough communication ports to establish at least three communicaiton channels. This project is based on ATmega328PB microcontroller coded with baremetal C. [Please See File:"GameController_ATmega.X" for Proof](https://github.com/ssysy/crazythursday.github.io/tree/main)
 
-- HRS 02 - Microcontroller with WiFi communication ability or equivlent. Here wireless communication parts will be handelled by ESP32 S2 Feather through ESP-NOW protocol.
+- HRS 02 - Microcontroller with WiFi communication ability or equivlent. Here wireless communication parts will be handelled by ESP32 S2 Feather through ESP-NOW protocol. [Proof of Work Video](https://youtube.com/shorts/MFv3rUwa7cc)
 
 - HRS 03 – A 6-DOF orientation IMU shall be used for movement detection. The sensor shall measure acceleration and angular velocity on the Pitcher Glove and the Hit Bat, with a detection range of at least -4g to 4g and a resolution of 2^16 steps.
 
-- HRS 04 – An LCD used for user interface. The display shall be able to communicate with the microcontroller via UART, I2C or equivalent communication protocol.
+<div style="text-align: center;">
 
-- HRS 05 - A power supply that can provide rated power for the used mircocontrollers, in this case: 3.3V for ESP32 S2 Feather and 5V for ATmega328PB. (Since we are using ATmega and ESP32 that have different logic voltage levels, an additionaly level shifter is need for communication between the two)
+  <img src="images/HRS3.png" alt="Description" style="width:60%; height:auto;" />
 
-- HRS 06 - One push button (momentary switch) shall be used at the Pitcher Glove to detect whether the 'ball' has been thrown out or not.
+</div>
 
-- HRS 07 - Actuators: LED, Buzzer, etc. could be added to any socre board devices as player interfaces. This project used two LEDs and one buzzer on socre board.
+- HRS 04 – An LCD used for user interface. The display shall be able to communicate with the microcontroller via UART, I2C or equivalent communication protocol. [Proof of Work Video](https://youtu.be/N9RdOPIz6gk)
+
+- HRS 05 - A power supply that can provide rated power for the used mircocontrollers, in this case: 3.3V for ESP32 S2 Feather and 5V for ATmega328PB. (Since we are using ATmega and ESP32 that have different logic voltage levels, an additionaly level shifter is need for communication between the two) [Please See File:"datasheet" for Proof](https://github.com/ssysy/crazythursday.github.io/tree/main)
+
+- HRS 06 - One push button (momentary switch) shall be used at the Pitcher Glove to detect whether the 'ball' has been thrown out or not. [Please See File:"datasheet" for Proof](https://github.com/ssysy/crazythursday.github.io/tree/main)
+
+- HRS 07 - Actuators: LED, Buzzer, etc. could be added to any socre board devices as player interfaces. This project used two LEDs and one buzzer on socre board. [Proof of Work Video](https://youtu.be/N9RdOPIz6gk)
 
 ### 6. Conclusion
 
@@ -74,6 +86,7 @@ Minimum of just one game controller and one portable processor to play the game 
 - ESP-NOW configuration on ESP32 using Arduino
 
 ### Encountered Issues
+
 - High Complexity of calculating velocity and angle (Kalman filtering and quaternions can be used to improve detection accuracy)
 - Short Battery life (Final demo: Playable for only 10-15 mins per battery cycle)
 - Conflicts caused by multiplexing of communication protocol pin (UART1 and SPI0, we therefore change to SPI1)
@@ -85,4 +98,4 @@ Minimum of just one game controller and one portable processor to play the game 
 - More Reliable, Longer Lasting, Rechargeable Power Supply Solutions
 - Better visualization (Larger LCD etc.)
 - More Robust Hardware Connection (PCB, More fitted cases)
-- More Available Games 
+- More Available Games
